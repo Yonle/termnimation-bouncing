@@ -38,7 +38,7 @@ function e() {
 
 let bb = 0;
 let int = setInterval(() => {
-  if (bb >= Number(process.argv[2] || 15)) return clearInterval(int);
+  if (bb >= Number(process.argv[2] || 20)) return clearInterval(int);
   e();
   bb++;
 }, Number(process.argv[4] || 200));
