@@ -48,3 +48,8 @@ process.on("SIGINT", () => {
   console.clear();
   process.exit(0);
 });
+
+process.stdin.on('data', () => {
+  console.clear();
+  e();
+});
